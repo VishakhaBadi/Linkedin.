@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>LinkedIn Login</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Sign in</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email or Phone</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+            <br><br>
+            </div>
+            
+            <button type="submit" class="btn" onclick="func()">Sign in</button>
+            
+        </form>
+        
+        <div class="footer">
+            <p><a href="#">Forget password?</a></p>
+            <p>New to LinkedIn? <a href="#">Join now</a></p>
+        </div>
+    </div>
+    <script>
+        function func()
+        {
+            var email=document.getElementById("email").value;
+            var pass=document.getElementById("password").value;
+          if(email=='vishakha123@gmail.com' && pass=='1234')
+          {
+            window.location.href="homepage.html"
+            alert("successfull")
+          }
+          else
+          {
+            alert("wrong entery invalid")
+          }
+        }
+        
+    </script>
+
+
+
+</body>
+</html>
+
+
+
